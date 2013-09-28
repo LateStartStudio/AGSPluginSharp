@@ -65,6 +65,7 @@
     <OutputPath>..\..\..\AGS3.2\</OutputPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <Import Project="..\..\AGSPluginSharp\packages\UnmanagedExports.1.2.4.23262\tools\RGiesecke.DllExport.targets" />  
   <ItemGroup>
     <Reference Include="RGiesecke.DllExport.Metadata">
       <HintPath>..\..\AGSPluginSharp\packages\UnmanagedExports.1.2.4.23262\lib\net\RGiesecke.DllExport.Metadata.dll</HintPath>

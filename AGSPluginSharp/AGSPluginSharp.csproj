@@ -64,6 +64,7 @@
     <OutputPath>bin\release\</OutputPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <Import Project=".\packages\UnmanagedExports.1.2.4.23262\tools\RGiesecke.DllExport.targets" />  
   <ItemGroup>
     <Reference Include="RGiesecke.DllExport.Metadata">
       <HintPath>packages\UnmanagedExports.1.2.4.23262\lib\net\RGiesecke.DllExport.Metadata.dll</HintPath>
