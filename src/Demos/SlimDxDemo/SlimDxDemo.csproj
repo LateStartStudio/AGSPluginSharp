@@ -64,10 +64,10 @@
     <OutputPath>..\..\..\AGS3.2\</OutputPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
-  <Import Project="..\..\AGSPluginSharp\packages\UnmanagedExports.1.2.4.23262\tools\RGiesecke.DllExport.targets" />  
   <ItemGroup>
-    <Reference Include="RGiesecke.DllExport.Metadata">
-      <HintPath>..\..\AGSPluginSharp\packages\UnmanagedExports.1.2.4.23262\lib\net\RGiesecke.DllExport.Metadata.dll</HintPath>
+    <Reference Include="RGiesecke.DllExport.Metadata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ad5f9f4a55b5020b, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UnmanagedExports.1.2.4.23262\lib\net\RGiesecke.DllExport.Metadata.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="SlimDX, Version=2.0.11.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
       <Private>True</Private>
@@ -148,4 +148,5 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <Import Project="../../packages/UnmanagedExports.1.2.4.23262/tools/RGiesecke.DllExport.targets" />
 </Project>
